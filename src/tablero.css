@@ -1,0 +1,78 @@
+.encabezado{
+    font-size: 30px;
+    font: bold 100% cursive;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablero{
+    width: 210px;
+    height: 210px;
+    position: relative;    
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cuadro{
+    width: 70px;
+    height: 70px;
+    background: rgb(145, 222, 250);
+    border: 2px solid rgb(2, 34, 124);
+    padding: 2px;
+    font-size: 40px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+/*Cuadro activo*/
+.cuadro:hover{
+    background: rgb(211, 143, 211);
+}
+
+/*Quitar bordes externos*/
+.cuadro:nth-child(1),.cuadro:nth-child(2),.cuadro:nth-child(3){
+    border-top: 0px;
+}
+
+.cuadro:nth-child(9),.cuadro:nth-child(7),.cuadro:nth-child(8){
+    border-bottom: 0px;
+}
+
+.cuadro:nth-child(1),.cuadro:nth-child(4),.cuadro:nth-child(7){
+    border-left: 0px;
+}
+
+.cuadro:nth-child(3),.cuadro:nth-child(6),.cuadro:nth-child(9){
+    border-right: 0px;
+}
+
+.reinicio{
+    cursor: pointer;
+    width: 210px;
+    color: #00266d; 
+    text-align: center;
+    background-color: rgb(233, 151, 151);
+    border: 2px solid rgb(224, 77, 19);
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Botón volver a jugar*/
+.status{
+    width: 210px;
+    color: #00266d; 
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
